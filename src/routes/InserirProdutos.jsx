@@ -37,7 +37,6 @@ export default function InserirProdutos() {
     return (
         <>
             <h1>Inserir Produtos</h1>
-            <ListaProdutos/>
-            <button onClick={() => navigate("/produtos")}>Voltar</button>
+            
         </>
     );}
