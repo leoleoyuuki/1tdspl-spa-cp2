@@ -4,6 +4,7 @@ import { ListaProdutos } from "../components/ListaProdutos"
 import classes from './Produtos.module.css'
 import {AiFillEdit as Editar} from 'react-icons/ai'
 import {RiDeleteBin2Fill as Excluir} from 'react-icons/ri'
+import { AiOutlineInsertRowAbove as Inserir } from "react-icons/ai"
 
 
 export default function Produtos(){
@@ -45,6 +46,9 @@ export default function Produtos(){
             <tfoot className={classes.tableFooter}>
                 <tr>
                     <td colSpan={7}>Produtos</td>
+                </tr>
+                <tr>
+                    <td colSpan={7}><Link to={"/inserir/produtos/:id"}>Inserir<Inserir/></Link></td>
                 </tr>
             </tfoot>
         </table>
