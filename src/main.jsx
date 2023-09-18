@@ -11,6 +11,8 @@ import Erro404 from './routes/Erro404.jsx';
 import Home from './routes/home.jsx';
 import Produtos from './routes/Produtos.jsx';
 import ExcluirProdutos from './routes/ExcluirProdutos.jsx';
+import InserirProdutos from './routes/InserirProdutos.jsx';
+
 
 const router = createBrowserRouter([
   {path: '/', element: <App/>, 
@@ -19,7 +21,9 @@ const router = createBrowserRouter([
       {path: '/', element: <Home/>},
       {path: '/produtos', element: <Produtos/>},
       {path: '/editar/produtos/:id', element: <EditarProdutos/>},
-      {path: '/excluir/produtos/:id', element: <ExcluirProdutos/>}
+      {path: '/excluir/produtos/:id', element: <ExcluirProdutos/>},
+      {path: '/inserir/produtos/:id', element: <InserirProdutos/>}
+
     ]
 
 }
