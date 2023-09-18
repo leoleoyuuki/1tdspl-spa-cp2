@@ -26,7 +26,7 @@ export default function InserirProdutos() {
     }
 
 // Manipuila o evento para inserir o novoPoduto no ListaProdutos
-    const handleInserer = (event)=>{
+    const handleInserir = (event)=>{
         event.preventDefault();
 
         ListaProdutos.push(novoProduto)
@@ -38,6 +38,14 @@ export default function InserirProdutos() {
     return (
         <>
             <h1>Inserir Produtos</h1>
+
+            <form onSubmit={handleInserir}>
+                <fieldset>
+                    <legend>Produto a ser editado</legend>
+                    <label htmlFor="id">Id: </label>
+                    <input type="text" name="id" value={novoProduto.id} required/>
+                </fieldset>
+            </form>
             
         </>
     );}
