@@ -44,6 +44,14 @@ export default function InserirProdutos() {
                     <legend>Produto a ser editado</legend>
                     <label htmlFor="id">Id: </label>
                     <input type="text" name="id" value={novoProduto.id} required/>
+                    <div>
+                        <label htmlFor="idNome">Nome:</label>
+                        <input type="text" name="nome" id="idNome" value={novoProduto.nome} onChange={handlChange}/>
+                    </div>
+                    <div>
+                        <label htmlFor="idDesc">Descrição:</label>
+                        <input type="text" name="desc" id="idDesc" value={novoProduto.desc} onChange={handlChange} />
+                    </div>
                 </fieldset>
             </form>
             
