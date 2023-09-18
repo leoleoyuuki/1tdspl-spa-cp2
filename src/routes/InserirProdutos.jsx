@@ -46,18 +46,18 @@ export default function InserirProdutos() {
                     <input type="text" name="id" value={novoProduto.id} required/>
                     <div>
                         <label htmlFor="idNome">Nome:</label>
-                        <input type="text" name="nome" id="idNome" value={novoProduto.nome} onChange={handlChange}/>
+                        <input type="text" name="nome" id="idNome" value={novoProduto.nome} onChange={handlChange} required/>
                     </div>
                     <div>
                         <label htmlFor="idDesc">Descrição:</label>
-                        <input type="text" name="desc" id="idDesc" value={novoProduto.desc} onChange={handlChange} />
+                        <input type="text" name="desc" id="idDesc" value={novoProduto.desc} onChange={handlChange} required/>
                     </div>
                     <div>
                         <label htmlFor="idPreco">Preço:</label>
-                        <input type="text" name="preco" id="idPreco" value={novoProduto.preco} onChange={handlChange} />
+                        <input type="text" name="preco" id="idPreco" value={novoProduto.preco} onChange={handlChange} required/>
                     
                         <label htmlFor="idImg">Img</label>
-                        <input type="text" name="img" id="idImg" value={novoProduto.img} onChange={handlChange} placeholder="URL" />
+                        <input type="text" name="img" id="idImg" value={novoProduto.img} onChange={handlChange} placeholder="URL" required/>
                     </div>
                     <div>
                         <button>Inserir</button>
