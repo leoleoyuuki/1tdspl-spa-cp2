@@ -52,6 +52,16 @@ export default function InserirProdutos() {
                         <label htmlFor="idDesc">Descrição:</label>
                         <input type="text" name="desc" id="idDesc" value={novoProduto.desc} onChange={handlChange} />
                     </div>
+                    <div>
+                        <label htmlFor="idPreco">Preço:</label>
+                        <input type="text" name="preco" id="idPreco" value={novoProduto.preco} onChange={handlChange} />
+                    
+                        <label htmlFor="idImg">Img</label>
+                        <input type="text" name="img" id="idImg" value={novoProduto.img} onChange={handlChange} placeholder="URL" />
+                    </div>
+                    <div>
+                        <button>Inserir</button>
+                    </div>
                 </fieldset>
             </form>
             
